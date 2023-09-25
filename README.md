@@ -235,5 +235,26 @@ showDetailsButton.addEventListener('click', () =>{
         <script src="githubwrapper.js"></script>
     </body>
     </html>
+//////////////////////////////////////
+use of async awit why////////////////////////////////////////////////////////////////////
+///////////////////////////////////
+note:- promise resolve krne ke liye .then ka use kr rhe .then krne ke baad fir se promise a jaaa rha hai to fir se promise ko remove krnek re liye .then ka use kr rhe hai.
+  // promise, resolve, reject, pending
+// const p = new Promise((resolve, reject) => {
+//   const x = 1 + 1;
+//   if(x == 2){
+//     resolve('success');  
+//   } else {
+//     reject('Failed');
+//   }
+// })
 
+// //then will be executed when promise resovle , otherwise catch will be executed
 
+// p.then((data) => console.log(data)).catch((err) => console.log(err))   // here return  promise
+//if p.then use again and return promise then use of async await// and promise returning again and again is call long chaining
+
+// fetch(`https://api.github.com/users/${userName}/repos`)    retured promise 
+//        .then(res => res.json())                            use then to resolve promise
+//        .then(projects =>{                           again returned promise then used then to resolve promise
+  // same as then and catch we use async and await
