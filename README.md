@@ -70,7 +70,7 @@ showDetailsButton.addEventListener('click', () =>{
             <button id="showDetails">Show Details</button>
         </div>
 
-          <div id="profileInfo">
+              <div id="profileInfo">
            
           </div>
         </div>
@@ -238,7 +238,7 @@ showDetailsButton.addEventListener('click', () =>{
 //////////////////////////////////////
 use of async awit why////////////////////////////////////////////////////////////////////
 ///////////////////////////////////
-note:- promise resolve krne ke liye .then ka use kr rhe .then krne ke baad fir se promise a jaaa rha hai to fir se promise ko remove krnek re liye .then ka use kr rhe hai.
+note:- promise resolve krne ke liye .then ka use kr rhe .then krne ke baad fir se promise a jaaa rha hai to fir se promise ko remove krnek re liye .then ka use kr rhe hai.fir promise aa jaa rha hai to isliye async await ka use kiya
   // promise, resolve, reject, pending
 // const p = new Promise((resolve, reject) => {
 //   const x = 1 + 1;
